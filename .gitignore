@@ -1,0 +1,65 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+backend/.pytest-tmp/
+
+# Node.js / frontend
+node_modules/
+dist/
+build/
+.vite/
+coverage/
+
+# Local databases and database backups
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
+
+# Local editor and OS files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local backup copies
+*.backup-*
+backup-carbon-*/
+backup-carbon-patch1-*/
+src.backup-*/
+
+# Diagnostic dumps and patch review files
+carbon-root-cause-source.txt
+carbon-patch1-review.txt
+carbon-patch1-frontend-review.txt
+carbon-patch1-endpoints.txt
+diag.txt
+project_snapshot.txt
+
+# Temporary stage backups and diagnostic bundles
+*.stage3-backup
+*.pre-fix1-backup
+*.before-scope-fix-*
+*_source.txt
+*_source_bundle.txt
+*_dump.txt
+upload-pack/
